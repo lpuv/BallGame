@@ -3,7 +3,7 @@ import abc
 
 class Component(metaclass=abc.ABCMeta):
 
-    def __init__(self, **kwargs):
+    def __init__(self, *args, **kwargs):
         """
         Constructs Component object given passed kwargs.
 
