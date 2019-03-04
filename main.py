@@ -46,8 +46,13 @@ def main():
     This is the main method. This contains an embedded method.
     :return:
     """
+
     @window.event
     def on_draw():
         draw()
-    pyglet.clock.schedule_interval(update, 1/120.0)
+
+    pyglet.clock.schedule_interval(update, 1 / 120.0)
     pyglet.app.run()
+
+
+main()
